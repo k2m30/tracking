@@ -1,21 +1,28 @@
-%h1 Listing locations
-
-%table
-  %tr
-    %th Name
-    %th Full name
-    %th
-    %th
-    %th
-
-  - @locations.each do |location|
-    %tr
-      %td= location.name
-      %td= location.full_name
-      %td= link_to 'Show', location
-      %td= link_to 'Edit', edit_location_path(location)
-      %td= link_to 'Destroy', location, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Location', new_location_path
+.col-md-2{style: 'padding-top:20px;'}
+  #accordion.panel-group
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+            МАЗ 9216 АЕ-6
+      #collapseOne.panel-collapse.collapse.in
+        .panel-body
+          = render partial: 'example'
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"}
+            Mercedes 2311 СК-6
+      #collapseTwo.panel-collapse.collapse
+        .panel-body
+          = render partial: 'example'
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"}
+            ГАЗ 1246 КЕ-6
+      #collapseThree.panel-collapse.collapse
+        .panel-body
+          = render partial: 'example'
+.col-md-10{style: 'padding: 0px;'}
+  #map

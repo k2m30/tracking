@@ -6,7 +6,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    %nav.navbar.navbar-default{:role => "navigation"}
+    %nav.navbar.navbar-default{:role => "navigation",style: "margin-bottom: 0px; "}
       .container-fluid
         .navbar-header
           %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
@@ -59,4 +59,6 @@
                 %li.divider
                 %li
                   %a{:href => "#"} Separated link
-    =yield
+    .container-fluid
+      .row
+        =yield

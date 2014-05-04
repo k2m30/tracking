@@ -1,2 +1,14 @@
+//= require leaflet
 @import "bootstrap";
 @import "bootstrap/theme";
+
+#map {
+  height: 900px;
+  width: 100%;
+}
+.no-margin-bottom{
+  margin-bottom: 0px;
+}
+.border-bottom{
+  border-bottom: 1px solid $table-border-color;
+}

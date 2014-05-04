@@ -5,6 +5,8 @@ class CreateLocations < ActiveRecord::Migration
       t.string :full_name
       t.string :polygon
 
+      t.belongs_to :country
+
     end
   end
 end

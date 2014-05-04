@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :route_points
+
+  resources :vehicles
+
+  resources :countries
+
   resources :locations
   root to: 'locations#index'
 
