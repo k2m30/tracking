@@ -23,6 +23,7 @@ default: &default
 
 development:
   <<: *default
+  user: Mikhail
   database: tr_dev
   password: 12345678
 

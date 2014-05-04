@@ -2,9 +2,9 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 
+html,body {height:100%;}
 #map {
-  height: 900px;
-  width: 100%;
+  height: 700px;
 }
 .no-margin-bottom{
   margin-bottom: 0px;
