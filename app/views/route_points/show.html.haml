@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b X:
+  = @route_point.x
+%p
+  %b Y:
+  = @route_point.y
+
+= link_to 'Edit', edit_route_point_path(@route_point)
+\|
+= link_to 'Back', route_points_path
