@@ -17,10 +17,9 @@ ActiveRecord::Schema.define(version: 20140504122154) do
   enable_extension "plpgsql"
 
   create_table "locations", force: true do |t|
-    t.string   "name"
-    t.string   "full_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "name"
+    t.string "full_name"
+    t.string "polygon"
   end
 
 end
